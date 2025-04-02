@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Website</title>
+    <style>
+        /* Common Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Home Page Styles */
+        .newsletter-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .newsletter-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .newsletter-card h3 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .subscribe-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .subscribe-btn:hover {
+            background: #2980b9;
+        }
+        
+        /* Login Page Styles */
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 50px auto;
+        }
+        
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .input-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .login-btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .forgot-password a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        /* Hide login page by default */
+        #login-page {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home-page">
+        <header>
+            <h1>Daily News Digest</h1>
+            <p>Your source for the latest updates</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="main.html" onclick="showLoginPage()">Login</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container">
+            <h2>Featured Newsletters</h2>
+            
+            <div class="newsletter-section">
+                <div class="newsletter-card">
+                    <h3>Tech Weekly</h3>
+                    <p>Stay updated with the latest in technology and innovation.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                
+                <div class="newsletter-card">
+                    <h3>Business Insights</h3>
+                    <p>Market trends and business strategies for professionals.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                
+                <div class="newsletter-card">
+                    <h3>Health Matters</h3>
+                    <p>Your weekly dose of health tips and medical breakthroughs.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            
+            <div class="newsletter-section">
+                <div class="newsletter-card">
+                    <h3>Science Digest</h3>
+                    <p>Exploring the wonders of science and discovery.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                
+                <div class="newsletter-card">
+                    <h3>Travel Tales</h3>
+                    <p>Discover new destinations and travel tips.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                
+                <div class="newsletter-card">
+                    <h3>Culinary Corner</h3>
+                    <p>Recipes and cooking techniques from around the world.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Daily News Digest. All rights reserved.</p>
+        </footer>
+        </div>
+    </div>
+    
+    <script>
+        function showLoginPage() {
+            document.getElementById('home-page').style.display = 'none';
+            document.getElementById('login-page').style.display = 'block';
+        }
+        
+        function showHomePage() {
+            document.getElementById('home-page').style.display = 'block';
+            document.getElementById('login-page').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

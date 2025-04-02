@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Categories</title>
+    <style>
+        /* Common Styles (Same as previous) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Categories Page Specific Styles */
+        .category-header {
+            text-align: center;
+            margin: 30px 0;
+            color: #2c3e50;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+        
+        .category-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-image {
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .tech { background-image: url('https://source.unsplash.com/random/600x400/?technology'); }
+        .business { background-image: url('https://source.unsplash.com/random/600x400/?business'); }
+        .health { background-image: url('https://source.unsplash.com/random/600x400/?health'); }
+        .science { background-image: url('https://source.unsplash.com/random/600x400/?science'); }
+        .travel { background-image: url('https://source.unsplash.com/random/600x400/?travel'); }
+        .food { background-image: url('https://source.unsplash.com/random/600x400/?food'); }
+        
+        .category-content {
+            padding: 20px;
+        }
+        
+        .category-title {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        
+        .category-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Newsletter Categories</h1>
+        <p>Browse by your interests</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="#" class="active">Categories</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2 class="category-header">Explore Our Newsletter Categories</h2>
+        
+        <div class="category-grid">
+            <!-- Technology Category -->
+            <div class="category-card">
+                <div class="category-image tech"></div>
+                <div class="category-content">
+                    <h3 class="category-title">Technology</h3>
+                    <p class="category-description">
+                        Stay updated with the latest in tech, gadgets, and innovation trends 
+                        from around the world.
+                    </p>
+                    <a href="#" class="btn">View Newsletters</a>
+                </div>
+            </div>
+            
+            <!-- Business Category -->
+            <div class="category-card">
+                <div class="category-image business"></div>
+                <div class="category-content">
+                    <h3 class="category-title">Business & Finance</h3>
+                    <p class="category-description">
+                        Market trends, investment strategies, and business insights 
+                        for professionals.
+                    </p>
+                    <a href="#" class="btn">View Newsletters</a>
+                </div>
+            </div>
+            
+            <!-- Health Category -->
+            <div class="category-card">
+                <div class="category-image health"></div>
+                <div class="category-content">
+                    <h3 class="category-title">Health & Wellness</h3>
+                    <p class="category-description">
+                        Medical breakthroughs, fitness tips, and mental health 
+                        advice from experts.
+                    </p>
+                    <a href="#" class="btn">View Newsletters</a>
+                </div>
+            </div>
+            
+            <!-- Science Category -->
+            <div class="category-card">
+                <div class="category-image science"></div>
+                <div class="category-content">
+                    <h3 class="category-title">Science & Nature</h3>
+                    <p class="category-description">
+                        Discoveries in science, space exploration, and the 
+                        natural world.
+                    </p>
+                    <a href="#" class="btn">View Newsletters</a>
+                </div>
+            </div>
+            
+            <!-- Travel Category -->
+            <div class="category-card">
+                <div class="category-image travel"></div>
+                <div class="category-content">
+                    <h3 class="category-title">Travel & Adventure</h3>
+                    <p class="category-description">
+                        Destination guides, travel tips, and cultural 
+                        experiences worldwide.
+                    </p>
+                    <a href="#" class="btn">View Newsletters</a>
+                </div>
+            </div>
+            
+            <!-- Food Category -->
+            <div class="category-card">
+                <div class="category-image food"></div>
+                <div class="category-content">
+                    <h3 class="category-title">Food & Cooking</h3>
+                    <p class="category-description">
+                        Recipes, cooking techniques, and culinary trends 
+                        from top chefs.
+                    </p>
+                    <a href="#" class="btn">View Newsletters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Daily News Digest. All rights reserved.</p>
+    </footer>
+</body>
+</html>
